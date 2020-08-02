@@ -9,6 +9,7 @@ def check_ipaddr(ipaddr)
     # IPAddress Objectを作成
     begin
         ipaddress = IPAddress(ipaddr)
+        ipaddr = ipaddress.address
     rescue => error
         # 無効なIPAdressの場合エラーとなる
         is_ipaddr = false
@@ -27,7 +28,7 @@ def check_ipaddr(ipaddr)
 
     # バリデーション結果とglobal/localかどうかを返す
     # IPAdress出ない場合、ip_typeはnilになる
-    return validate, ip_type
+    return ipaddr, validate, ip_type
 end
 
 def main(argv)
@@ -42,8 +43,8 @@ def main(argv)
     File.open(file_name, "r") do |f|
         # 一行ずつ解析
         f.each_line{|line|
-            ipaddr = line.strip
-            validate, ip_type = check_ipaddr(ipaddr)
+            line = line.strip
+            ipaddr, validate, ip_type = check_ipaddr(line)
 
             puts("-------------------------")
             puts("Input IP : #{ipaddr}")
