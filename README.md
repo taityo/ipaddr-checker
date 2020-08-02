@@ -13,10 +13,6 @@ $ bundle install
 ```
 
 ## Usage
-```
-ruby main.rb [file path]
-```
-
 ### bundler
 ```
 $ bundler exec ruby main.rb [file path]
@@ -55,12 +51,6 @@ Input IP : dsfdsajdsa
 Validate : Unknown IP Address dsfdsajdsa
 Type : 
 -------------------------
-```
-
-### bundler
-```
-$ bundler exec ruby main.rb ./list/ipaddr
-...
 ```
 
 ### docker
