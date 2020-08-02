@@ -13,8 +13,14 @@ $ bundle install
 ```
 
 ## Usage
+### bundler
 ```
 $ bundler exec ruby main.rb [fine path]
+```
+
+### docker
+```
+$ docker run -v [your file path]:/ipaddr-checker/list/ipaddr taityo/ipaddr-checker
 ```
 
 ## Example

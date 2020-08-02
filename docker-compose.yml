@@ -1,0 +1,7 @@
+version: '2'
+services:
+  ipchecker:
+    image: taityo/ipaddr-checker
+    build: .
+#    volumes:
+#      - ./list/ipaddr:/ipaddr-checker/list/ipaddr
