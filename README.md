@@ -24,6 +24,7 @@ $ docker run -v [your file path]:/ipaddr-checker/list/ipaddr taityo/ipaddr-check
 ```
 
 ## Example
+### bundler
 ```
 $ bundler exec ruby main.rb list/ipaddr 
 -------------------------
