@@ -15,7 +15,7 @@ $ bundle install
 ## Usage
 ### bundler
 ```
-$ bundler exec ruby main.rb [file path]
+$ bundle exec ruby main.rb [file path]
 ```
 
 ### docker
@@ -26,7 +26,7 @@ $ docker run -v [your file path]:/ipaddr-checker/list/ipaddr taityo/ipaddr-check
 ## Example
 ### bundler
 ```
-$ bundler exec ruby main.rb list/ipaddr 
+$ bundle exec ruby main.rb list/ipaddr 
 -------------------------
 Input IP : 192.168.189.1
 Validate : OK
